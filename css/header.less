@@ -1,0 +1,136 @@
+@width:1180px;
+@height:50px;
+nav{
+  width: 100%;
+  height: @height;
+  box-shadow: 0 1px 3px #eee;
+  position: sticky;
+  top:0px;
+  background-color: #fff;
+  z-index: 3;
+  .nav-center{
+    position: relative;
+    width: @width;
+    margin: auto;
+    display: flex;
+    .logo{
+      line-height: @height;
+      img{
+        display: block;
+        position: relative;
+        margin-top: 9px;
+      }
+    }
+    .search{
+      width: 368px;
+      height: 28px;
+      display: flex;
+      position: relative;
+      top:12px;
+      border: 1px solid #eee;
+      input{
+        flex: 1;
+        // background-color: #eee;
+      }
+      .serach-icon{
+        width: 40px;
+        text-align: center;
+        line-height: 28px;
+        font-size: 28px;
+        margin-left: 0;
+      }
+      .dropdown{
+        display: none;
+        height: 400px;
+        width: 366px;
+        border: 1px solid #eee;
+        background-color: #fff;
+        position: absolute;
+        z-index: 5;
+        top:36px;
+        .title{
+          color: orange;
+          padding-left: 10px;
+          height: 30px;
+          line-height: 30px;
+        }
+        ul{
+          width: 366px;
+          li a{
+            display: flex;
+            width: 366px;
+            height: 30px;
+            line-height: 30px;
+            // margin-left: 10px;
+            position: relative;
+            span:first-child{
+              width: 16px;
+              height: 16px;
+              line-height: 16px;
+              text-align: center;
+              border-radius: 50%;
+              background-color: red;
+              color: #fff;
+              position: relative;
+              top:7px;
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+            span{
+              color: #fff;
+              width: 20px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              background-color: salmon;
+              position: absolute;
+              right: 10px;
+              bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+    .nav-right{
+      // width: 300px;
+      flex: 1;
+      line-height:@height;
+      ul{
+        display: flex;
+        font-size: 16px;
+        li{
+          width: 80px;
+          height: 50px;
+          line-height: 50px;
+          z-index: 5;
+          text-align: center;
+          transition: all 0.2s ease-in-out 0;
+          a{
+            color: #333;
+            font-size: 18px;
+          }
+          a:hover{
+            text-decoration: none; 
+          }
+          .theme{
+            width: 80px;
+            height: 200px;
+            display: none;
+            z-index: 999;
+            ul{
+              display: block;
+              background-color: #fff;
+              li{
+                height: 30px;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+        li:hover{
+          border-bottom: 2px solid #91eae4;
+        }
+      }
+    }
+  }
+}

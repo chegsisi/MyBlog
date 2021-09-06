@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/picture.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <nav>
+    <div class="nav-center">
+    <div class="logo">
+      <img src="" alt="">
+    </div>
+    <div class="nav-right">
+      <ul>
+        <li><a  href="./index.html">首页</a></li>
+        <li><a  href="#" id="article">文章</a></li>
+        <li><a  href="./picture.html">图片</a></li>
+        <li><a href="./message.html">留言</a></li>
+        <li id="change"><a  href="#">换肤</a>
+          <div class="theme">
+            <ul class="theme-list">
+              <li>白天</li>
+              <li>黑夜</li>
+              <li>清爽</li>
+              <li>秋风</li>
+            </ul>
+          </div>
+        </li>
+        <!-- <li id="l-btn"><a href="#" id="l-a">登录</a></li> -->
+        <!-- <li id="cancel"><a href="#" id="l-a">注销</a></li> -->
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" id="search">
+      <span class="iconfont icon-sousuo serach-icon"></span>
+      <div class="dropdown">
+        <div class="title">查看完整热搜榜</div>
+        <ul class="dropdown-ul"></ul>
+      </div>
+    </div> 
+  </div>
+  </nav>
+  <!-- 主体部分 -->
+  <div id="content">
+    <div class="center">
+      <div class="title">图片</div>
+      <div id="main">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/cookie.js"></script>
+<script src="./js/theme.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/pictureData.js"></script>
+<script src="./js/picture.js"></script>
+</html>

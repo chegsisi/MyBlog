@@ -1,0 +1,35 @@
+#content {
+  width: 100%;
+  margin-top: 10px;
+}
+#content .center {
+  width: 1280px;
+  margin: auto;
+}
+#content .center .title {
+  height: 60px;
+  line-height: 60px;
+  color: #333;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+#content .center #main {
+  width: 1280px;
+  column-count: 4;
+  column-width: 300px;
+  position: relative;
+  margin-top: 20px;
+}
+#content .center #main .box {
+  position: relative;
+  margin-bottom: 30px;
+}
+#content .center #main .box img {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 280px;
+  height: auto;
+}

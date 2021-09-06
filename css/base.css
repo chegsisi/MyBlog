@@ -1,0 +1,58 @@
+/* 除去所有a标签的下划线 */
+body{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none; 
+  /* color: #fff; */
+}
+input{
+  padding: 0px;
+   /*除去input框默认样式*/
+  /*去除阴影*/
+  box-shadow:none;
+  /*聚焦input的蓝色边框*/
+  outline: none;
+  /*textarea 禁止拖拽*/
+  resize: none;
+  /*去除边框*/
+  border: none;
+  /*常用于IOS下移除原生样式*/
+  -webkit-appearance: none;
+  /*点击高亮的颜色*/
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+textarea{
+  outline: none;
+  resize: none;
+}
+button{
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+button:focus{
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#ffe6fa;
+  border-radius: 1.25rem;
+}

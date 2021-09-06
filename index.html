@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <nav>
+      <div class="nav-center">
+      <div class="logo">
+        <img src="" alt="">
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a  href="./index.html">首页</a></li>
+          <li><a  href="#" id="article">文章</a></li>
+          <li><a  href="./picture.html">图片</a></li>
+          <li><a href="./message.html">留言</a></li>
+          <li id="change"><a  href="#">换肤</a>
+            <div class="theme">
+              <ul class="theme-list">
+                <li>白天</li>
+                <li>黑夜</li>
+                <li>清爽</li>
+                <li>秋风</li>
+              </ul>
+            </div>
+          </li>
+          <li id="l-btn"><a href="#" id="l-a">登录</a></li>
+          <li id="cancel"><a href="#" id="l-a">注销</a></li>
+        </ul>
+      </div>
+      <div class="search">
+        <input type="text" id="search">
+        <span class="iconfont icon-sousuo serach-icon"></span>
+        <div class="dropdown">
+          <div class="title">查看完整热搜榜</div>
+          <ul class="dropdown-ul"></ul>
+        </div>
+      </div> 
+    </div>
+    </nav>
+    <!-- 登录表单 -->
+    <div id="login">
+      <div class="login-center">
+        <div class="login-title">
+          <ul class="alist clearfix">
+            <li class="active">注册</li>
+            <li >登录</li>
+          </ul>
+        </div>
+        <div class="form">
+          <div class="l-r-form">
+          <form id="r-form">
+            <input type="text" placeholder="用户名" id="r-username" value=""> 
+            <span class="user-notice"></span>
+            <input type="password" placeholder="密码" id="r-password" value="">
+            <span class="pass-notice"></span>
+            <input type="text" placeholder="手机号" id="phone" value="">
+            <span class="phone-notice"></span>
+            <div id="code">
+              <input type="text" placeholder="验证码" id="r-code" value="">
+              <button id="getCode">发送验证码到手机</button>
+              <span class="code-info"></span>
+              <span class="code-notice"></span>
+            </div>
+           
+            <div>
+              <button id="register-btn" >注册</button>
+              <span><a href="#">已有账号，去登录</a></span>
+            </div>
+          </form>
+          </div>
+          <div class="l-r-form">
+            <form id="l-form" >
+              <input type="text" placeholder="用户名" id="l-username" value="">
+              <span class="l-u-notice"></span>
+              <input type="password" placeholder="密码" id="l-password" value="">
+              <span class="l-u-pass"></span>
+              <div>
+              <button id="login-btn">登录</button>
+              <span><a href="#">忘记密码</a></span>
+              </div>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div id="content">
+      <div class="content-center">
+        <div class="left">
+          <ul>
+            <li class="show">热门</li>
+            <li>最新</li>
+            <li>推荐</li>
+          </ul>
+        </div>
+        <div class="center">
+          <div id="carouselExampleCaptions" class="carousel slide image" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="image1">
+              <div class="carousel-inner">
+                <div class="carousel-item active item1">
+                  <img src="./images/s1.jpg" class="img1" alt="">
+                  <img src="./images/pic1.jpg" class="img2" alt="">
+                  <img src="./images/pic2.jpg" class="img3" alt="">
+                </div>
+                <div class="carousel-item item2">
+                  <img src="./images/s2.jpg" class="img1" alt="">
+                  <img src="./images/pic3.jpg" class="img2" alt="">
+                  <img src="./images/pic4.jpg" class="img3" alt="">
+                </div>
+                <div class="carousel-item item3">
+                  <img src="./images/pic1.jpg" class="img1" alt="">     
+                  <img src="./images/pic5.jpg" class="img2" alt="">
+                  <img src="./images/pic6.jpg" class="img3" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tips">您有未读内容，点击查看<span class="close">X</span></div>
+          <div class="total-article">
+          </div>
+        </div>
+        <div class="right">
+        <div class="user">
+          <div class="cover"></div>
+          <img src="./images/user2.jpg" alt="" id="u-img">
+          <div class="name"><span id="name"></span></div>
+          <div class="info">
+            <div class="item"><span class="sum"></span><div>文章</div></div>
+            <div class="item"><span>1</span><div>留言</div></div>
+            <div class="item"><span>0</span><div>关注</div></div>
+          </div>
+        </div>
+      
+        </div>
+    </div>
+    <div class="top-btn">
+      <img src="./images/top.svg" alt="">
+    </div>
+    <!-- 侧边栏 -->
+    <div class="social">
+      <ul>
+        <li class="first">
+          <a href="" ><span  class="icon-qq"></span></a>
+        </li>
+        <li class="second">
+          <a href=""><span  class="icon-mail2"></span></a>
+        </li> 
+        <li class="third">
+          <a href=""><span  class="icon-sina-weibo"></span> </a>
+        </li> 
+        <li class="last">
+          <a href=""><span  class="icon-github"></span></a>
+        </li>
+      </ul>
+    </div>
+</body>
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/cookie.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/articleData.js"></script>
+<script src="./js/theme.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/index.js"></script>
+</html>

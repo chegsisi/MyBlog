@@ -1,0 +1,183 @@
+html,body{
+  /* background: url('../images/bg3.jpg') no-repeat; */
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: url(https://cdn.jsdelivr.net/gh/inkss/common@master/cursor/left_ptr.png), auto;
+  position: relative;
+  background-color: #333;
+}
+video{  
+  position: fixed;  
+  right: 0px;  
+  bottom: 0px;  
+  min-width: 100%;  
+  min-height: 100%;  
+  height: auto;  
+  width: auto;  
+  /*加滤镜*/
+  /*filter: blur(15px); //背景模糊设置 */
+  /*-webkit-filter: grayscale(100%);*/  
+  /*filter:grayscale(100%); //背景灰度设置*/  
+  z-index:-11
+}  
+source{  
+  min-width: 100%;  
+  min-height: 100%;  
+  height: auto;  
+  width: auto;  
+} 
+.github-corner{
+  background-color: #42b983;
+  border-radius: 3em;
+}
+.body-center{
+  width: 400px;
+  height: 100px;
+  position: relative;
+  top:50%;
+  margin: auto;
+  transform: translateY(-110%);
+  font-size: 30px;
+  font-family: 'Architects Daughter', cursive !important;
+  color: #fff;
+  text-align: center;
+
+}
+.enter-blog{
+  font-family: MV Boli;
+  margin: auto;
+  width: 200px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(0, 150, 136);
+}
+.body-center a{
+  color: #fff;
+}
+#header{
+  height: 50px;
+  color: #fff;
+}
+.header-center{
+  width: 1170px;
+  margin: auto;
+  line-height: 50px;
+  display: flex;
+  position: relative;
+}
+.header-center a{
+  color: #fff;
+}
+.header-center a span{
+  font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
+  font-size: 30px;
+}
+.header-right span{
+  font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+}
+.hover{
+  border-bottom:2px solid #42b983;
+}
+.login-center{
+  display: none;
+  z-index: 999;
+  width: 400px;
+  height: 380px;
+  position: relative;
+  top:50%;
+  margin-left: 200px;
+  margin: auto;
+  transform: translateY(-50%);
+}
+.login-title{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  /* border-bottom: 1px solid #eee; */
+}
+.login-title ul{
+  display: flex;
+
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+.login-title .alist li.active{
+  color:rgb(0, 150, 136); 
+  border-bottom: 3px solid rgb(0, 150, 136);
+}
+.alsit-list li:first-child{
+  display: block;
+}
+.alsit-list li{
+ display: none;
+}
+.login-title ul li{
+  width: 100px;
+  text-align: center;
+  margin-right: 10px;
+}
+.form{
+  margin-top: 10px;
+}
+
+.l-r-form{
+  display: none;
+} 
+.form div:first-child{
+  display: block;
+}
+.l-r-form{
+  padding:0 20px;
+}
+
+.l-r-form form input{
+  padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #eee;
+  margin-top: 5px;
+}
+.l-r-form form span{
+  height: 20px;
+  line-height: 20px;
+  padding-left: 10px;
+  color: #42b983;
+}
+.l-r-form button{
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: rgb(0, 150, 136);
+  color: #fff;
+  margin-top: 10px;
+} 
+.l-r-form span a{
+  color: #333;
+  margin-left: 20px;
+}
+#code input{
+  width: 140px;
+  margin-right: 10px;
+}
+#code button{
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+}

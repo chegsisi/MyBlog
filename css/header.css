@@ -1,0 +1,131 @@
+nav {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 1px 3px #eee;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  z-index: 3;
+}
+nav .nav-center {
+  position: relative;
+  width: 1180px;
+  margin: auto;
+  display: flex;
+}
+nav .nav-center .logo {
+  line-height: 50px;
+}
+nav .nav-center .logo img {
+  display: block;
+  position: relative;
+  margin-top: 9px;
+}
+nav .nav-center .search {
+  width: 368px;
+  height: 28px;
+  display: flex;
+  position: relative;
+  top: 12px;
+  border: 1px solid #eee;
+}
+nav .nav-center .search input {
+  flex: 1;
+}
+nav .nav-center .search .serach-icon {
+  width: 40px;
+  text-align: center;
+  line-height: 28px;
+  font-size: 28px;
+  margin-left: 0;
+}
+nav .nav-center .search .dropdown {
+  display: none;
+  height: 400px;
+  width: 366px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  position: absolute;
+  z-index: 5;
+  top: 36px;
+}
+nav .nav-center .search .dropdown .title {
+  color: orange;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+nav .nav-center .search .dropdown ul {
+  width: 366px;
+}
+nav .nav-center .search .dropdown ul li a {
+  display: flex;
+  width: 366px;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+nav .nav-center .search .dropdown ul li a span:first-child {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  position: relative;
+  top: 7px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+nav .nav-center .search .dropdown ul li a span {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: salmon;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+nav .nav-center .nav-right {
+  flex: 1;
+  line-height: 50px;
+}
+nav .nav-center .nav-right ul {
+  display: flex;
+  font-size: 16px;
+}
+nav .nav-center .nav-right ul li {
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  z-index: 5;
+  text-align: center;
+  transition: all 0.2s ease-in-out 0;
+}
+nav .nav-center .nav-right ul li a {
+  color: #333;
+  font-size: 18px;
+}
+nav .nav-center .nav-right ul li a:hover {
+  text-decoration: none;
+}
+nav .nav-center .nav-right ul li .theme {
+  width: 80px;
+  height: 200px;
+  display: none;
+  z-index: 999;
+}
+nav .nav-center .nav-right ul li .theme ul {
+  display: block;
+  background-color: #fff;
+}
+nav .nav-center .nav-right ul li .theme ul li {
+  height: 30px;
+  line-height: 30px;
+}
+nav .nav-center .nav-right ul li:hover {
+  border-bottom: 2px solid #91eae4;
+}

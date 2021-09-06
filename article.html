@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/article.css">
+</head>
+<body>
+ <!-- 头部 -->
+ <nav>
+  <div class="nav-center">
+  <div class="logo">
+    <img src="" alt="">
+  </div>
+  <div class="nav-right">
+    <ul>
+      <li><a  href="./index.html">首页</a></li>
+      <li><a  href="#" id="article">文章</a></li>
+      <li><a  href="./picture.html">图片</a></li>
+      <li><a href="./message.html">留言</a></li>
+      <li id="change"><a  href="#">换肤</a>
+        <div class="theme">
+          <ul class="theme-list">
+            <li>白天</li>
+            <li>黑夜</li>
+            <li>清爽</li>
+            <li>秋风</li>
+          </ul>
+        </div>
+      </li>
+      <!-- <li id="l-btn"><a href="#" id="l-a">登录</a></li> -->
+      <!-- <li id="cancel"><a href="#" id="l-a">注销</a></li> -->
+    </ul>
+  </div>
+  <div class="search">
+    <input type="text" id="search">
+    <span class="iconfont icon-sousuo serach-icon"></span>
+    <div class="dropdown">
+      <div class="title">查看完整热搜榜</div>
+      <ul class="dropdown-ul"></ul>
+    </div>
+  </div> 
+</div>
+</nav>
+   <div id="content">
+    <div class="content-center">
+      <div class="article-notice">
+        <ul class="ul-notice">
+          <li >
+            <span class="icon-point-right"></span>
+             首页 &gt;文章阅读
+          </li>
+          <li>
+            <span class="icon-point-right"></span>
+            博客其他功能暂待开发
+          </li>
+       </ul>
+      </div>
+      <div class="main-content">
+         <div class="next-read"><span id="p-read">上一篇</span><span id="n-read">下一篇</span></div>
+         <legend>—发表评论——————————————————————————————————————————————</legend>
+         <div class="write-message">        
+          <div class="message-pic">
+            <img src="./images/expression.png" alt="">
+            <img src="./images/pic.png" alt="">
+          </div>
+          <textarea id="message" placeholder="发表评论"></textarea>
+        </div>
+        <button id="message-btn">提交评论</button>
+        <div class="comment-content">
+        </div>
+      </div>
+      </div>
+  </div>
+  <div class="top-btn">
+    <img src="./images/top.svg" alt="">
+  </div>
+  <script src="./js/jquery-1.12.4.min.js"> </script>
+  <script src="./js/cookie.js"></script>
+  <script src="./js/theme.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./js/article.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/articleData.js"></script>
+  <script src="./js/readArticle.js"></script>
+
+</body>
+</html>
